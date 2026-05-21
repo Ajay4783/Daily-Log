@@ -20,3 +20,13 @@ const ages = [15, 22, 18, 10, 30];
 const adults = ages.filter(age => age >= 18);
 
 console.log("Adults only:", adults); // [22, 18, 30]
+
+### 3. reduce()
+Executes a reducer function on each element, resulting in a single output value (like summing up prices in a cart).
+
+```javascript
+const cartPrices = [10, 20, 30];
+// 0 is the initial value of 'sum'
+const total = cartPrices.reduce((sum, price) => sum + price, 0);
+
+console.log("Total Cart Price:", total); // 60
