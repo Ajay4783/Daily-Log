@@ -11,3 +11,12 @@ const doubled = numbers.map(num => num * 2);
 
 console.log("Original:", numbers); // [1, 2, 3, 4]
 console.log("Doubled:", doubled);  // [2, 4, 6, 8]
+
+### 2. filter()
+Creates a new array filled with elements that pass a test (condition) provided by a function.
+
+```javascript
+const ages = [15, 22, 18, 10, 30];
+const adults = ages.filter(age => age >= 18);
+
+console.log("Adults only:", adults); // [22, 18, 30]
