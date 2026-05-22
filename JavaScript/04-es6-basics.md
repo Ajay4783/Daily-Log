@@ -44,3 +44,14 @@ const [firstColor, secondColor] = colors;
 
 console.log(firstColor);  // Output: Red
 console.log(secondColor); // Output: Green
+
+
+### 4. Spread Operator (...)
+Allows an iterable (like an array or object) to be expanded. Great for copying or merging data.
+
+```javascript
+const oldArray = [1, 2, 3];
+// Copying and adding new elements
+const newArray = [...oldArray, 4, 5]; 
+
+console.log(newArray); // Output: [1, 2, 3, 4, 5]
