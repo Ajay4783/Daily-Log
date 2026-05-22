@@ -15,3 +15,19 @@ function add(a, b) {
 const addArrow = (a, b) => a + b;
 
 console.log(addArrow(5, 10)); // Output: 15
+
+
+### 2. Object Destructuring
+A convenient way to extract values from objects and assign them to variables.
+
+```javascript
+const user = { name: "Ajay", age: 20, role: "Developer" };
+
+// Old way
+// const name = user.name;
+// const role = user.role;
+
+// ES6 Destructuring
+const { name, role } = user;
+
+console.log(${name} is a ${role}); // Output: Ajay is a Developer
