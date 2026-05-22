@@ -31,3 +31,16 @@ const user = { name: "Ajay", age: 20, role: "Developer" };
 const { name, role } = user;
 
 console.log(${name} is a ${role}); // Output: Ajay is a Developer
+
+
+### 3. Array Destructuring
+Similar to objects, you can unpack values from arrays into distinct variables.
+
+```javascript
+const colors = ["Red", "Green", "Blue"];
+
+// Unpacking arrays based on position
+const [firstColor, secondColor] = colors;
+
+console.log(firstColor);  // Output: Red
+console.log(secondColor); // Output: Green
