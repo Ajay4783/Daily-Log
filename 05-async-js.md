@@ -32,3 +32,16 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise
   .then(result => console.log(result))
   .catch(error => console.log(error));
+
+
+### 3. async / await (ES8)
+This is syntactic sugar on top of Promises. It makes asynchronous code look and behave a little more like synchronous code, which is easier to read.
+
+```javascript
+const fetchData = async () => {
+  console.log("Fetching data...");
+  const result = await myPromise; // Waits for the promise to resolve
+  console.log(result);
+};
+
+fetchData();
