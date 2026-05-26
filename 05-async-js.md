@@ -14,3 +14,21 @@ setTimeout(() => {
 
 console.log("3. End"); 
 // Output order will be: Start -> End -> This runs after 2 seconds
+
+
+### 2. Promises
+A Promise represents the eventual completion (or failure) of an asynchronous operation. It has 3 states: Pending, Fulfilled, or Rejected.
+
+```javascript
+const myPromise = new Promise((resolve, reject) => {
+  let success = true;
+  if (success) {
+    resolve("Operation was successful!");
+  } else {
+    reject("Operation failed.");
+  }
+});
+
+myPromise
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
