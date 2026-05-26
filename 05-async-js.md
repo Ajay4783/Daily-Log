@@ -45,3 +45,16 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+
+### 4. Fetch API
+The `fetch()` method is used to request data from a server. It returns a Promise.
+
+```javascript
+const getUser = async () => {
+  const response = await fetch('[https://jsonplaceholder.typicode.com/users/1](https://jsonplaceholder.typicode.com/users/1)');
+  const data = await response.json();
+  console.log("User Name:", data.name);
+};
+
+getUser();
