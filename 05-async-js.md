@@ -58,3 +58,20 @@ const getUser = async () => {
 };
 
 getUser();
+
+
+
+### 5. Error Handling (try...catch)
+When using `async/await`, it's best practice to wrap your code in a `try...catch` block to handle any network errors or rejected promises.
+
+```javascript
+const getBadData = async () => {
+  try {
+    const response = await fetch('[https://invalid-url.com](https://invalid-url.com)');
+    const data = await response.json();
+  } catch (error) {
+    console.error("Oops! Something went wrong:", error.message);
+  }
+};
+
+getBadData();
